@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!-- saved from url=(1078)https://social-blog.wix.com/custom-feed-widget?pageId=c1dmp&compId=comp-l21fg61b&viewerCompId=comp-l21fg61b&siteRevision=33&viewMode=site&deviceType=desktop&locale=en&tz=Africa%2FAddis_Ababa&regionalLanguage=en&width=980&height=340&instance=W7q_J8XX8QTbcv8dHEzU0v7v0_zenLXkiniFOf9GlF4.eyJpbnN0YW5jZUlkIjoiYTQwMWIzZjYtNzZhNy00ZmVhLWJjMjctYmQwYTQ3MjMzOWIyIiwiYXBwRGVmSWQiOiIxNGJjZGVkNy0wMDY2LTdjMzUtMTRkNy00NjZjYjNmMDkxMDMiLCJtZXRhU2l0ZUlkIjoiZWQzY2M3MjgtMjBiMS00YmM0LTlhMTQtMTk0YjdmYTAzODQwIiwic2lnbkRhdGUiOiIyMDIzLTAxLTIxVDEwOjEwOjQ4LjE0MloiLCJkZW1vTW9kZSI6ZmFsc2UsIm9yaWdpbkluc3RhbmNlSWQiOiJiMDA4NDBmYS1kODQ3LTRmNjMtYjRiNS0zNjY0MDBlNThkOTkiLCJhaWQiOiI1MDgwZGE2Mi04MGIwLTQxYjktYmM0Ny1mMzI2NmQ1YzMxMDAiLCJiaVRva2VuIjoiNDkzZDc0ZGUtNTYxNi0wNDJlLTI2MzMtYTQ0MTM4ODMwMWYyIiwic2l0ZU93bmVySWQiOiI2MWJiYWQ4YS04ODAzLTRiZjctYTlmMS02OGI5OWZhZDQ5OWIifQ&currency=ETB&currentCurrency=ETB&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22bsi%22%3A%22105faf57-f0bb-423e-bfc9-21e516b75e33%7C1%22%2C%22BSI%22%3A%22105faf57-f0bb-423e-bfc9-21e516b75e33%7C1%22%7D&vsi=a437c625-81d9-4fed-9c91-761f0d194f49 -->
+<html lang="en"><head dir="ltr"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+(function() {
+  try {
+    var canvas = typeof document === 'object' ? window.document.createElement('canvas') : {};
+    canvas.width = canvas.height = 1;
+    window.__IS_WEBP_SUPPORTED__ = canvas.toDataURL ? canvas.toDataURL('image/webp').indexOf('image/webp') === 5 : false;
+  } catch (e) {
+    window.__IS_WEBP_SUPPORTED__ = false;
+  }
+})();
+</script>
+
+
+
+    
+
+      
+  
+  
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://www.wix.com/favicon.ico">
+
+
+
+
+  <script type="text/javascript">
+  (function(x,e,o,s,n){var a=window.fedops||{};a.apps=a.apps||{};a.apps[x]={startLoadTime:e&&e.now&&e.now()};try{a.sessionId=o.getItem("fedops.logger.sessionId")}catch(x){}a.sessionId=a.sessionId||"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(x){var e=s()*16|0,o=x=="x"?e:e&3|8;return o.toString(16)});window.fedops=a;var d="//frog.wix.com/fed?appName="+x+"&src=72&evid=14&session_id="+a.sessionId+"&_="+s();if(!!n&&!!n.sendBeacon){n.sendBeacon(d)}else{(new Image).src=d}})('communities-blog-custom-feed-widget',window.performance,window.localStorage,Math.random,window.navigator);
+</script>
+
+
+
+
+      
+      
+<script>
+  try {
+    if (window.parent) {
+      var msgSent = false;
+      var vars = window.location.search.replace('?', '').split('&');
+      for (var i = 0; i < vars.length; i++) {
+        var arr = vars[i].split('=');
+        if (arr[0] == 'compId') {
+          window.parent.postMessage('{"intent":"TPA2","callId":1,"type":"appIsAlive","compId":"' + arr[1] + '","deviceType":"desktop","data":{"version":"1.66.0"}}', '*')
+          msgSent = true;
+        }
+      }
+      if (!msgSent) {
+        console.info('couldn\'t find compId in', window.location);
+      }
+    }
+  } catch (e) {
+    console.error('Error posting keep alive msg', e);
+  }
+</script>
+
+      
+
+      
+        <script src="./polyfill.min.js.download" crossorigin=""></script>
+
+        
+    <script src="./bundle.min.js.download" crossorigin="anonymous"></script>
+    <script>
+      (function initSentry() {
+        function isDuplexerError(event) {
+          try {
+            var stackFrames = event.exception.values[0].stacktrace.frames;
+            return /@wix\/wix-duplexer-js/.test(stackFrames[stackFrames.length - 1].filename);
+          } catch (error) {
+            return false;
+          }
+        }
+
+        Sentry.init({
+          dsn: 'https://71e32b4ded27414b90a94adb4e8b4d23@sentry.wixpress.com/94',
+          beforeSend: function beforeSend(event) {
+            return isDuplexerError(event) ? null : event;
+          },
+        });
+
+        Sentry.configureScope(function(scope) {
+          var p = function(x) { return x.split('=', 2).map(decodeURIComponent); };
+          var r = function(acc, x) { acc[x[0]] = x[1]; return acc; };
+          var q = location.search.replace(/^\?/, '').split('&').map(p).reduce(r, {});
+          
+          scope.setTag('bundleName', 'custom-feed-widget');
+          scope.setTag('instanceId', 'a401b3f6-76a7-4fea-bc27-bd0a472339b2');
+          scope.setTag('viewMode', q.viewMode);
+          scope.setTag('deviceType', q.deviceType);
+          scope.setTag('locale', q.locale);
+        });
+      })();
+    </script>
+  
+        
+      
+
+      
+        <link rel="stylesheet" type="text/css" href="./css">
+<link rel="stylesheet" type="text/css" href="./languages.css">
+<link rel="stylesheet" type="text/css" href="./custom-feed-widget.min.css">
+        
+
+<style wix-style="">
+  /* Widget styles */
+  .blog-background-color { background-color: rgba(255,255,255,0); }
+	.blog-background-color { background-color: rgba(255,255,255,0); }
+
+  /* Post styles */
+  .blog-text-color { color: rgba(255,255,255,1); }
+	.blog-text-color { color: rgba(255,255,255,1); }
+	.blog-text-border-color { border-color: rgba(255,255,255,1); }
+	.blog-text-border-color { border-color: rgba(255,255,255,1); }
+	.blog-text-background-color { background-color: rgba(255,255,255,1); }
+	.blog-text-background-color { background-color: rgba(255,255,255,1); }
+  .blog-icon-fill { fill: rgba(255,255,255,1); }
+	.blog-icon-fill { fill: rgba(255,255,255,1); }
+	.blog-icon-stroke { stroke: rgba(255,255,255,1); }
+	.blog-icon-stroke { stroke: rgba(255,255,255,1); }
+  .blog-separator-background-color { background-color: rgba(255,255,255,1); }
+	.blog-separator-background-color { background-color: rgba(255,255,255,1); }
+  .blog-inverted-separator-background-color { background-color: rgba(255,255,255,1); }
+	.blog-inverted-separator-background-color { background-color: rgba(255,255,255,1); }
+  .blog-card-background-color { background-color: rgba(255,255,255,1); }
+	.blog-card-background-color { background-color: rgba(255,255,255,1); }
+	.blog-card-fill { fill: rgba(255,255,255,1); }
+	.blog-card-fill { fill: rgba(255,255,255,1); }
+	.blog-card-stroke { stroke: rgba(255,255,255,1); }
+	.blog-card-stroke { stroke: rgba(255,255,255,1); }
+	.blog-card-color { color: rgba(255,255,255,1); }
+	.blog-card-color { color: rgba(255,255,255,1); }
+  .blog-card-border-color { border-color: rgba(191,191,191,0.75); }
+	.blog-card-border-color { border-color: rgba(191,191,191,0.75); }
+  .blog-post-title-color { color: rgba(255,255,255,1); }
+	.blog-post-title-color { color: rgba(255,255,255,1); }
+  .blog-post-image-overlay-background-color { background-color: rgba(0,0,0,0.35); }
+	.blog-post-image-overlay-background-color { background-color: rgba(0,0,0,0.35); }
+
+  .blog-post-title-font { font:normal normal normal 28px/1.375em poppins-extralight,poppins,sans-serif; font-size: 28px; line-height: normal; }
+	.blog-post-title-font { font:normal normal normal 22px/1.41em poppins-extralight,poppins,sans-serif; line-height: normal; }
+	.blog-post-title-font { font:normal normal normal 22px/1.41em poppins-extralight,poppins,sans-serif; line-height: normal; }
+  .blog-post-description-font { font:normal normal normal 18px/1.75em "times new roman",times,serif; font-size: 16px; line-height: normal; }
+	.blog-post-description-font { font:normal normal normal 16px/20px proxima-n-w01-reg,proxima-n-w05-reg,sans-serif; line-height: normal; }
+	.blog-post-description-font { font:normal normal normal 16px/20px proxima-n-w01-reg,proxima-n-w05-reg,sans-serif; line-height: normal; }
+
+  /* Button styles */
+  .blog-button-primary-text-color { color: #FFFFFF; }
+	.blog-button-primary-text-color { color: #FFFFFF; }
+	.blog-button-primary-text-background-color { background-color: #FFFFFF; }
+	.blog-button-primary-text-background-color { background-color: #FFFFFF; }
+  .blog-button-primary-icon-fill { fill: #FFFFFF; }
+	.blog-button-primary-icon-fill { fill: #FFFFFF; }
+  .blog-button-secondary-text-color { color: #1dda29; }
+	.blog-button-secondary-text-color { color: #1DDA29; }
+  .blog-button-secondary-icon-fill { fill: #1dda29; }
+	.blog-button-secondary-icon-fill { fill: #1DDA29; }
+  .blog-button-color { color: #1dda29; }
+	.blog-button-color { color: #1DDA29; }
+	.blog-button-background-color { background-color: #1dda29; }
+	.blog-button-background-color { background-color: #1DDA29; }
+	.blog-button-border-color { border-color: #1dda29; }
+	.blog-button-border-color { border-color: #1DDA29; }
+	.blog-button-fill { fill: #1dda29; }
+	.blog-button-fill { fill: #1DDA29; }
+	.blog-button-stroke { stroke: #1dda29; }
+	.blog-button-stroke { stroke: #1DDA29; }
+  .is-desktop .blog-button-hover-color:hover { color: rgba(255,255,255,1); }
+	.is-desktop .blog-button-hover-color:hover { color: rgba(255,255,255,1); }
+	.is-desktop .blog-button-hover-fill:hover { fill: rgba(255,255,255,1); }
+	.is-desktop .blog-button-hover-fill:hover { fill: rgba(255,255,255,1); }
+  .is-desktop .blog-link-hover-color:hover { color: rgba(255,255,255,1); }
+	.is-desktop .blog-link-hover-color:hover { color: rgba(255,255,255,1); }
+	.is-desktop .blog-link-hover-fill:hover { fill: rgba(255,255,255,1); }
+	.is-desktop .blog-link-hover-fill:hover { fill: rgba(255,255,255,1); }
+  .is-desktop .blog-hover-container:hover .blog-hover-container-element-color { color: rgba(255,255,255,1); }
+	.is-desktop .blog-hover-container:hover .blog-hover-container-element-color { color: rgba(255,255,255,1); }
+	.is-desktop .blog-hover-container:hover .blog-hover-container-element-fill { fill: rgba(255,255,255,1); }
+	.is-desktop .blog-hover-container:hover .blog-hover-container-element-fill { fill: rgba(255,255,255,1); }
+  .is-desktop .blog-button-hover-after-border-color:hover::after { border-color: #1dda29; }
+	.is-desktop .blog-button-hover-after-border-color:hover::after { border-color: #1DDA29; }
+  .blog-button-after-border-color::after { border-color: #1dda29; }
+	.blog-button-after-border-color::after { border-color: #1DDA29; }
+
+  /* Fixed styles */
+  .blog-default-card-background-color { background-color: #FFFFFF; }
+	.blog-default-card-background-color { background-color: #FFFFFF; }
+  .blog-default-button-background-color { background-color: #1dda29; }
+	.blog-default-button-background-color { background-color: #1DDA29; }
+  .blog-quote-border-color { border-color: #a5a7a6; }
+	.blog-quote-border-color { border-color: #A5A7A6; }
+</style>
+
+      
+    <style wix-style="">.Title{ font:normal normal normal 22px/1.41em poppins-extralight,poppins,sans-serif; } .Menu{ font:normal normal normal 14px/1.79em raleway,sans-serif; } .Page-title{ font:normal normal normal 28px/1.375em poppins-extralight,poppins,sans-serif; } .Heading-XL{ font:normal normal normal 88px/1.2em poppins-extralight,poppins,sans-serif; } .Heading-L{ font:normal normal normal 72px/1.25em poppins-extralight,poppins,sans-serif; } .Heading-M{ font:normal normal normal 50px/1.34em poppins-extralight,poppins,sans-serif; } .Heading-S{ font:normal normal normal 40px/1.35em poppins-extralight,poppins,sans-serif; } .Body-L{ font:normal normal normal 20px/1.67em times new roman,times,serif; } .Body-M{ font:normal normal normal 18px/1.75em times new roman,times,serif; } .Body-S{ font:normal normal normal 15px/1.875em raleway,sans-serif; } .Body-XS{ font:normal normal normal 14px/1.79em raleway,sans-serif; } }</style><style>@font-face {
+    font-display: block;
+    font-family: "Poppins-ExtraLight";
+    src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/h3r77AwDsldr1E_2g4qqGPk_vArhqVIZ0nv9q090hN8.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/h3r77AwDsldr1E_2g4qqGBsxEYwM7FgeyaSgU71cLG0.woff") format("woff"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/h3r77AwDsldr1E_2g4qqGC3USBnSvpkopQaUR-2r7iU.ttf") format("truetype"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/poppins-extralight-Svg.svg") format("svg");
+}
+@font-face {
+    font-display: block;
+    font-family: "Poppins-ExtraLight";
+    font-weight: 700;
+    src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/rijG6I_IOXJjsH07UEo2mw.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/p0A1C4_gK5NzKtuGSwNurQ.woff") format("woff"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/rATt6MpBkxjRr3sy5fMEDg.ttf") format("truetype"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/poppins-extralight-700-Svg.svg") format("svg");
+}
+@font-face {
+    font-display: block;
+    font-family: "Poppins-ExtraLight";
+    font-style: italic;
+    src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/-GlaWpWcSgdVagNuOGuFKRUOjZSKWg4xBWp_C_qQx0o.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/-GlaWpWcSgdVagNuOGuFKRa1RVmPjeKy21_GQJaLlJI.woff") format("woff"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/-GlaWpWcSgdVagNuOGuFKdqQynqKV_9Plp7mupa0S4g.ttf") format("truetype"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/poppins-extralight-italic-Svg.svg") format("svg");
+}
+@font-face {
+    font-display: block;
+    font-family: "Poppins-ExtraLight";
+    font-weight: 700;
+    font-style: italic;
+    src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/Fm41upUVp7KTKUZhL0PfQVtXRa8TVwTICgirnJhmVJw.woff2") format("woff2"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/Fm41upUVp7KTKUZhL0PfQT8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/Fm41upUVp7KTKUZhL0PfQaCWcynf_cDxXwCLxiixG1c.ttf") format("truetype"),
+    url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Poppins-extralight/v5/poppins-extralight-700-italic-Svg.svg") format("svg");
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptsg8zYS_SKggPNyCg4QIFqL_KWxWMT.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptsg8zYS_SKggPNyCg4SYFqL_KWxWMT.woff2") format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptsg8zYS_SKggPNyCg4QoFqL_KWxWMT.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptsg8zYS_SKggPNyCg4Q4FqL_KWxWMT.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptsg8zYS_SKggPNyCg4TYFqL_KWxQ.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptsg8zYS_SKggPNyCg4QIFqL_KWxWMT.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptsg8zYS_SKggPNyCg4SYFqL_KWxWMT.woff2") format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptsg8zYS_SKggPNyCg4QoFqL_KWxWMT.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptsg8zYS_SKggPNyCg4Q4FqL_KWxWMT.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptsg8zYS_SKggPNyCg4TYFqL_KWxQ.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptug8zYS_SKggPNyCAIT4ttDfCmxA.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptug8zYS_SKggPNyCkIT4ttDfCmxA.woff2") format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptug8zYS_SKggPNyCIIT4ttDfCmxA.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptug8zYS_SKggPNyCAIT4ttDfCmxA.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptug8zYS_SKggPNyCkIT4ttDfCmxA.woff2") format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptug8zYS_SKggPNyCIIT4ttDfCmxA.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("//static.parastorage.com/services/santa-resources/dist/viewer/user-site-fonts/fonts/Raleway/v26/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style><link type="text/css" rel="stylesheet" href="./languages-woff2.css"><link type="text/css" rel="stylesheet" href="./wixMadefor.css"><style>:focus {
+    outline: none;
+}
+
+.js-focus-visible .focus-visible:focus,
+.js-focus-visible .focus-visible:focus ~ .wixSdkShowFocusOnSibling
+{
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 1px 2px #3899EC;
+}
+</style><script src="./focus-visible.min.js.download" id="dynamic_script_FOCUS_VISIBLE"></script></head>
+
+    <body class="Bavrd js-focus-visible">
+      
+
+      <div id="root"><div id="direction-provider-wrapper"><div dir="ltr"><div class="X9e1k blog-background-color is-desktop app-desktop" id="content-wrapper"><div class="heJYB"><div></div><div><div><div class="lijFP kVRHw post-list"><div><div class="kVRHw"><div class="ayD63 kVRHw"><div class="uhp7T"><div class="JiTG3"><article class="POVOn IrcWc QtmVL blog-post-description-font blog-text-color blog-card-background-color blog-card-border-color post-list-item" tabindex="0" style="border-width:0" data-hook="post-list-item"><div style="height:292px;min-height:292px" class="_2znVH"><a tabindex="-1" href="https://abenuabera.wixsite.com/enat-technology/post/how-ai-is-changing-personal-data-tracking" target="_top" class="blog-link-hover-color"><div class="mdgNA -g1G-" data-hook="post-list-item-image"><div class="_6IL8K" style="background-image: url(&quot;https://static.wixstatic.com/media/de40f50776b54f62b3e0cd4ca4ea679c.jpg/v1/fit/w_675,h_365,al_c,q_80/file.webp&quot;); background-size: cover;" data-pin-url="https://abenuabera.wixsite.com/enat-technology/post/how-ai-is-changing-personal-data-tracking"></div></div></a></div><div class="Wo2VM IrcWc QtmVL blog-post-image-overlay-background-color Zd3hE"><div class="blog-post-description-font"><div class="_0nS8K blog-post-metadata-font post-header"><div class="Z3isq"><div class="a9st1"><ul class="E-sQl krB-n"><li><span class="post-metadata__date time-ago" data-hook="time-ago">Apr 16, 2022</span></li><li><div class="pwe-J OdBtZ blog-separator-background-color"></div></li><li><span class="post-metadata__readTime" data-hook="time-to-read">3 min</span></li></ul></div></div></div></div><a class="_5-3NL IrcWc QtmVL" href="https://abenuabera.wixsite.com/enat-technology/post/how-ai-is-changing-personal-data-tracking" target="_top"><div class="hGEVd blog-post-title-font IrcWc QtmVL" data-hook="post-title"><h1 class="zfCg4 post-title post-title__text blog-post-title-color blog-hover-container-element-color" datahook="post-title"><div style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 2;">How AI is changing personal data tracking</div></h1></div></a><div class="UTQ4Y IrcWc"><div class="yvF3w oCOJL IrcWc blog-separator-background-color"></div><div class="blog-post-description-font"><div class="fAy7v blog-post-description-font blog-text-color post-footer"><div class="ZLqXU"><div class="JkHTh post-stats" data-hook="post-stats"><span class="AswZw" data-hook="view-count-compact" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" aria-label="11 views" class="blog-icon-fill"><title></title><path d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z"></path></svg><span aria-hidden="true" class="GBpLx">11</span></span><a customurldata="[object Object]" class="W3TWH" href="https://abenuabera.wixsite.com/enat-technology/post/how-ai-is-changing-personal-data-tracking" target="_top"><span data-hook="write-comment__label" class="IbL7I">Write a comment</span></a></div></div><div class="i7KGH"><button class="NBN87 post-footer__like-button"><span class="f9OtK" data-hook="like-button-with-count__like-count"><span aria-hidden="true" class="D8H8- like-button-with-count__like-count">2</span><div class="like-button iCI5a" aria-label="2 likes. Post not marked as liked" role="button" data-hook="like-button"><div class="-Ym-M"><div class="_8-A3q"></div></div><div class="_9d6Az"><div class="_8-A3q"></div></div><div class="vyiKm"><div class="_8-A3q"></div></div><div class="_8bMhv"><div class="_8-A3q"></div></div><div class="_9ZT9n"></div><svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"><path d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z"></path></svg></div></span></button></div></div></div></div></div></article></div></div></div></div><div></div></div></div></div></div></div></div></div></div></div>
+
+      
+        <script>
+  var p = function(x) { return x.split('=', 2).map(decodeURIComponent); };
+  var r = function(acc, x) { acc[x[0]] = x[1]; return acc; };
+  var q = location.search.replace(/^\?/, '').split('&').map(p).reduce(r, {});
+  window.parent.postMessage(
+  '{"intent":"TPA2","callId":1,"type":"applicationLoadingStep","compId":"' + q.compId + '","deviceType":"' + q.deviceType + '","data":{"version":"1.94.0", "args":{"stage":"firstMeaningfulPaint", "stageNum":0}}}', '*'
+  );
+</script>
+
+      
+
+      
+        <script>
+  window.wixTpaWindowResize = {
+    elSelector: '#content-wrapper',
+    enableViewportFix: false,
+  };
+</script>
+<script>!function(){"use strict";!function(e){var n=e.wixTpaWindowResize;if(n){if(!n.elSelector)return console.error("Aborting window resize handler: you must specify a css selector");var i,t=decodeURIComponent(e.location.search).split("&").reduce(function(e,n){var i=n.split("=");return e[i[0]]=i[1],e},{}),o=320,r=n.elSelector,a=n.interval||160,s=n.minHeight||null,c=n.disableOnMobile||!1,l=n.enableViewportFix||!1,d="mobile"===t.deviceType,u=["editor","preview"].indexOf(t.viewMode)>-1,h=n.onInit||function(){},f=!1!==n.listenOnInit,v=!0===n.log;d&&c||(f&&g(),h({startListening:g,stopListening:m}))}function p(e){v&&console.log("window-resize-handler ",e)}function w(n){var i=n.scrollHeight*(d&&l?o/(u?o:function(){var n=!1;if(void 0!==e.orientation)n=90===e.orientation||-90===e.orientation;else{var i=e.matchMedia("(orientation: landscape)");n=!(!i||!0!==i.matches)}return n}()?Math.max(e.screen.width,e.screen.height):e.screen.width):1);return s?Math.max(i,s):i}function g(){var n=0;i=e.setInterval(function(){var i=e.document.querySelector(r);if(i){var t=w(i);n===t&&e.innerHeight===t||(n=t,function(n){e.Wix?(p("window.Wix.setHeight"),e.Wix.setHeight(n)):(p("window.parent.postMessage"),e.parent.postMessage('{"intent":"TPA2","callId":1,"type":"heightChanged","compId":"'+e.name+'","deviceType":"desktop","data":{"version":"1.66.0", "args":{"height":"'+n+'", "overflow":"false"}}}',"*"))}(t))}},a)}function m(){e.clearInterval(i)}}(window)}();
+</script>
+
+
+        
+<script src="./lodash.min.js.download" crossorigin=""></script>
+
+<script src="./wix-private.min.js.download" crossorigin=""></script>
+
+
+
+        <script src="./react.production.min.js.download" crossorigin=""></script>
+<script src="./react-dom.production.min.js.download" crossorigin=""></script>
+
+
+        <script src="./ReactPlayer.js.download" crossorigin=""></script>
+
+
+        <script src="./custom-feed-widget.bundle.min.js.download" crossorigin="" defer=""></script>
+
+        
+
+        <script>
+          window.__INITIAL_STATE__ = {"appData":{"_id":"a401b3f6-76a7-4fea-bc27-bd0a472339b2","label":"Welcome to Your Blog","menuLabel":"All Posts","description":"Review the posts below for some great tips. To edit this header go to Settings \u003E Categories.","language":"en","cover":{"original_file_name":"a27d24_85296a50517f45428acb01b9c4911ba1~mv2_d_3992_1513_s_2.jpg","file_name":"a27d24_85296a50517f45428acb01b9c4911ba1~mv2_d_3992_1513_s_2.jpg","width":3992,"height":1513},"overlayColor":{"color":"#ffffff","opacity":0.35},"backgroundColor":{"color":"#FFFFFF","opacity":1},"coverType":"image","textColor":{"color":"#000000","opacity":1},"sendEmailsToSiteSubscribers":false,"sendEmailsToSiteMembers":true,"postPageEnabled":true},"appSettings":{"0":"C","1":"r","2":"e","3":"a","4":"t","5":"e","6":"d","colorPresets":[{"name":"color_1","value":"#000000","reference":"white\u002Fblack"},{"name":"color_2","value":"#1dda29","reference":"black\u002Fwhite"},{"name":"color_3","value":"#6a6c6b","reference":"primery-1"},{"name":"color_4","value":"#dcdcdc","reference":"primery-2"},{"name":"color_5","value":"#1ad5db","reference":"primery-3"},{"name":"color_11","value":"#FFFFFF","reference":"color-1"},{"name":"color_12","value":"#bfbfbf","reference":"color-2"},{"name":"color_13","value":"#808080","reference":"color-3"},{"name":"color_14","value":"#404040","reference":"color-4"},{"name":"color_15","value":"#000000","reference":"color-5"},{"name":"color_16","value":"#b2f5b6","reference":"color-6"},{"name":"color_17","value":"#64ea6d","reference":"color-7"},{"name":"color_18","value":"#1dda29","reference":"color-8"},{"name":"color_19","value":"#13911b","reference":"color-9"},{"name":"color_20","value":"#0a490e","reference":"color-10"},{"name":"color_21","value":"#e1e2e1","reference":"color-11"},{"name":"color_22","value":"#c3c4c4","reference":"color-12"},{"name":"color_23","value":"#a5a7a6","reference":"color-13"},{"name":"color_24","value":"#878a89","reference":"color-14"},{"name":"color_25","value":"#6a6c6b","reference":"color-15"},{"name":"color_26","value":"#eeeeee","reference":"color-16"},{"name":"color_27","value":"#dcdcdc","reference":"color-17"},{"name":"color_28","value":"#a5a5a5","reference":"color-18"},{"name":"color_29","value":"#6e6e6e","reference":"color-19"},{"name":"color_30","value":"#373737","reference":"color-20"},{"name":"color_31","value":"#89eef1","reference":"color-21"},{"name":"color_32","value":"#1ad5db","reference":"color-22"},{"name":"color_33","value":"#13a0a4","reference":"color-23"},{"name":"color_34","value":"#0d6a6e","reference":"color-24"},{"name":"color_35","value":"#063537","reference":"color-25"}],"textPresets":{"Title":{"editorKey":"font_0","lineHeight":"1.41em","style":"normal","weight":"normal","size":"22px","fontFamily":"poppins-extralight","value":"font:normal normal normal 22px\u002F1.41em poppins-extralight,poppins,sans-serif;"},"Menu":{"editorKey":"font_1","lineHeight":"1.79em","style":"normal","weight":"normal","size":"14px","fontFamily":"raleway","value":"font:normal normal normal 14px\u002F1.79em raleway,sans-serif;"},"Page-title":{"editorKey":"font_2","lineHeight":"1.375em","style":"normal","weight":"normal","size":"28px","fontFamily":"poppins-extralight","value":"font:normal normal normal 28px\u002F1.375em poppins-extralight,poppins,sans-serif;"},"Heading-XL":{"editorKey":"font_3","lineHeight":"1.2em","style":"normal","weight":"normal","size":"88px","fontFamily":"poppins-extralight","value":"font:normal normal normal 88px\u002F1.2em poppins-extralight,poppins,sans-serif;"},"Heading-L":{"editorKey":"font_4","lineHeight":"1.25em","style":"normal","weight":"normal","size":"72px","fontFamily":"poppins-extralight","value":"font:normal normal normal 72px\u002F1.25em poppins-extralight,poppins,sans-serif;"},"Heading-M":{"editorKey":"font_5","lineHeight":"1.34em","style":"normal","weight":"normal","size":"50px","fontFamily":"poppins-extralight","value":"font:normal normal normal 50px\u002F1.34em poppins-extralight,poppins,sans-serif;"},"Heading-S":{"editorKey":"font_6","lineHeight":"1.35em","style":"normal","weight":"normal","size":"40px","fontFamily":"poppins-extralight","value":"font:normal normal normal 40px\u002F1.35em poppins-extralight,poppins,sans-serif;"},"Body-L":{"editorKey":"font_7","lineHeight":"1.67em","style":"normal","weight":"normal","size":"20px","fontFamily":"times new roman","value":"font:normal normal normal 20px\u002F1.67em \"times new roman\",times,serif;"},"Body-M":{"editorKey":"font_8","lineHeight":"1.75em","style":"normal","weight":"normal","size":"18px","fontFamily":"times new roman","value":"font:normal normal normal 18px\u002F1.75em \"times new roman\",times,serif;"},"Body-S":{"editorKey":"font_9","lineHeight":"1.875em","style":"normal","weight":"normal","size":"15px","fontFamily":"raleway","value":"font:normal normal normal 15px\u002F1.875em raleway,sans-serif;"},"Body-XS":{"editorKey":"font_10","lineHeight":"1.79em","style":"normal","weight":"normal","size":"14px","fontFamily":"raleway","value":"font:normal normal normal 14px\u002F1.79em raleway,sans-serif;"}},"updatedAt":1674299156754,"style":{"colors":{"post-backgroundColor":{"themeName":"color-1","value":"rgba(255,255,255,1)"},"post-borderColor":{"themeName":"color-2","value":"rgba(191,191,191,0.75)"},"post-descriptionColo-textOnImager":{"themeName":"color-1","value":"rgba(255,255,255,1)"},"post-descriptionColor":{"themeName":"color-1","value":"rgba(255,255,255,1)"},"post-descriptionColor-standard":{"themeName":"color-5","value":"rgba(0,0,0,1)"},"post-hoverColor":{"themeName":"color-1","value":"rgba(255,255,255,1)"},"post-hoverColor-standard":{"themeName":"color-8","value":"rgba(29,218,41,1)"},"post-imageOverlayColor":{"themeName":"color-5","value":"rgba(0,0,0,0.35)"},"post-titleColo-textOnImager":{"themeName":"color-1","value":"rgba(255,255,255,1)"},"post-titleColor":{"themeName":"color-1","value":"rgba(255,255,255,1)"},"post-titleColor-standard":{"themeName":"color-5","value":"rgba(0,0,0,1)"},"widget-backgroundColor":{"themeName":"color-1","value":"rgba(255,255,255,0)"}},"numbers":{"list-layoutId":2,"list-numberOfRows":1},"booleans":{"blog-isAuthorNameEnabled":false},"fonts":{"ignored-as-color-picker-does-not-support-info-text":{"family":"poppins-extralight","displayName":"Heading 2","style":{"bold":false,"italic":false,"underline":false},"size":28,"preset":"Page-title","editorKey":"font_2","fontStyleParam":true,"value":"font:normal normal normal 28px\u002F1.375em poppins-extralight,poppins,sans-serif;"},"post-descriptionFont":{"family":"proxima-n-w01-reg","style":{"bold":false,"italic":false,"underline":false},"size":16,"preset":"Custom","editorKey":"font_9","fontStyleParam":true,"displayName":"Paragraph 3","value":"font:normal normal normal 16px\u002F20px proxima-n-w01-reg,proxima-n-w05-reg,sans-serif;"},"post-descriptionFont-standard":{"family":"proxima-n-w01-reg","displayName":"Paragraph 2","style":{"bold":false,"italic":false,"underline":false},"size":16,"preset":"Custom","editorKey":"font_8","fontStyleParam":true,"value":"font:normal normal normal 16px\u002F20px proxima-n-w01-reg,proxima-n-w05-reg,sans-serif;"},"post-descriptionFont-textOnImage":{"family":"raleway","style":{"bold":false,"italic":false,"underline":false},"size":15,"preset":"Body-S","editorKey":"font_9","fontStyleParam":true,"displayName":"Paragraph 3","value":"font:normal normal normal 15px\u002F1.875em raleway,sans-serif;"},"post-titleFont":{"family":"poppins-extralight","style":{"bold":false,"italic":false,"underline":false},"size":22,"preset":"Title","editorKey":"font_0","fontStyleParam":true,"displayName":"Heading 1","value":"font:normal normal normal 22px\u002F1.41em poppins-extralight,poppins,sans-serif;"},"post-titleFont-standard":{"family":"proxima-n-w01-reg","displayName":"Heading 2","style":{"bold":false,"italic":false,"underline":false},"size":28,"preset":"Custom","editorKey":"font_2","fontStyleParam":true,"value":"font:normal normal normal 28px\u002F35px proxima-n-w01-reg,proxima-n-w05-reg,sans-serif;"},"post-titleFont-textOnImage":{"family":"poppins-extralight","style":{"bold":false,"italic":false,"underline":false},"size":22,"preset":"Title","editorKey":"font_0","fontStyleParam":true,"displayName":"Heading 1","value":"font:normal normal normal 22px\u002F1.41em poppins-extralight,poppins,sans-serif;"}},"googleFontsCssUrl":"\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Poppins:n,b,i,bi|Raleway:n,b,i,bi|&subset=hebrew,arabic,latin","uploadFontFaces":"","cssUrls":["\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fsanta-resources\u002Fresources\u002Fviewer\u002Fuser-site-fonts\u002Fv16\u002Flanguages.css"]},"custom":{}},"auth":{"currentUser":null,"isAuthenticated":false,"isAuthenticating":false},"communitiesContext":{"14cc59bc-f0b7-15b8-e1c7-89ce41d0e0c9":{"isInstalled":false}},"experiments":{"se_newBlogQuickMigration":"new","specs.wixBlog.ImportFromWordPressInsideMenu":"false","specs.wixBlog.BMCategorySeoPanel":"true","specs.wixBlog.DontUsePrivateWixSearch":"true","specs.wixBlog.RedesignMoreActionsMenu":"false","specs.wixBlog.SimulateInvalidDraftRevisionId":"false","specs.media.MediaManager3":"true","specs.wixBlog.CollectMetrics":"false","specs.wixBlog.UseAdvancedSEOInCategoryFeed":"true","specs.wixBlog.UseAvailableMongoSlugs":"true","specs.wixBlog.FontSizeFixEnabled":"true","specs.wixBlog.RicosEmbedButtons":"false","specs.wixBlog.BMReduceApiCalls":"false","specs.wixBlog.InstallNewMemberPages":"true","specs.wixBlog.UsePostPageStyleInFullpost":"true","specs.wixBlog.TagManager":"true","specs.wixBlog.IgnoreSeoFields":"true","specs.wixBlog.WithLeanStyles":"true","specs.wixBlog.OOIPostsWithSiteTimezone":"true","specs.wixBlog.UseFeedPageAdapterInEditor":"false","specs.wixBlog.BMPostsAndCategoriesLimits":"true","specs.wixBlog.BMMergePendingReviewTab":"false","specs.wixBlog.UseStableIdsOOI":"true","specs.wixBlog.AddWriterModalUpgrade":"true","specs.wixBlog.UseSlugSuggestionService":"true","specs.wixBlog.BlockViewCountUpdates":"false","specs.wixBlog.BMBusinessFirstFlow":"true","specs.wixBlog.BMCommentsDashboard":"false","specs.wixBlog.UseFeedPageAdapterInViewer":"false","specs.wixBlog.ReduceSitemapExtractionChunkSize":"false","specs.wixBlog.PostRatingsInViewer":"true","specs.wixBlog.HashtagPageUseFeedPage":"true","specs.wixBlog.UseDemoService":"true","specs.wixBlog.PostRatings":"false","specs.wixBlog.QueryPublicOwnerForContentEndpoint":"true","specs.wixBlog.PostEditorMLEmptyState":"B","specs.wixBlog.BMOverview":"true","specs.wixBlog.PostTemplates":"true","specs.wixBlog.PostListFilterWarnings":"true","specs.wixBlog.DisplayPostComposerError":"false","specs.blogImporter.EnableRollbackOfMigrationsBM":"false","specs.wixBlog.BMDevMode":"false","specs.wixBlog.UseComponentDataChanged":"false","specs.wixBlog.UseLayoutFixer":"false","specs.wixBlog.AdvancedSEOViewer":"false","specs.wixBlog.BMDeprecateOwnerField":"false","specs.wixBlog.useRicosImageImprovement":"true","specs.wixBlog.UnifyPostsEmptyStates":"false","specs.wixBlog.SEOFAQData":"false","specs.wixBlog.PostTemplatesCategories":"false","specs.wixBlog.FeaturedPostsFilter":"false","specs.wixBlog.isMAModalEnabled":"false","specs.membersArea.BlogCommentsFromCommentsSerivice":"true","specs.wixBlog.AutoTranslateFeature":"false","specs.wixBlog.PostPageScrollToComments":"false","specs.wixBlog.UseBMFlow":"true","specs.wixBlog.BMTabsLayout":"true","specs.wixBlog.UseFilesusrDomain":"false","specs.wixBlog.ProvisionWithNoBlogContentForTemplate":"true","specs.wixBlog.RenameInModerationToInReview":"true","specs.wixBlog.DevOOI":"false","specs.wixBlog.usePricingPlansV2":"false","specs.wixBlog.ProdOOIEditor":"true","specs.wixBlog.MigrateCustomFeedOnEditorReady":"true","specs.wixBlog.RicosPollPlugin":"true","specs.wixBlog.WixImporterFixes":"false","specs.wixBlog.PlaformizedPin":"false","specs.wixBlog.BMManagePendingReviews":"true","specs.wixBlog.SetDefaultsInEditorApp":"false","specs.wixBlog.BMNewDeleteModal":"true","specs.wixBlog.BMHireBlogWriter":"true","specs.wixBlog.ImportXML":"true","specs.wixBlog.EnableDiscoveryIngestion":"true","specs.wixBlog.FixSearchUrl":"true","specs.wixBlog.ReturnLanguageInBaseUrl":"true","specs.BlogSecureWordpressImporterSpec":"true","specs.wixBlog.BlockLikeCountUpdates":"false","specs.wixBlog.RicosBaseUrl":"false","specs.wixBlog.RicosStaticToolbar":"true","specs.wixBlog.OverviewHideMoreAppsSection":"true","specs.wixBlog.CommentsMentions":"true"},"isAppLoaded":false,"isDemoMode":false,"isLoaded":{"feed-posts":true},"isLoading":{"feed-posts":false},"pagination":{"comments":{"entitiesByPage":{}},"posts":{"entitiesByPage":{"1":["625a55ea9d043480b3279430"]},"currentPage":1,"pageSize":3,"entityCount":1},"posts-unpublished":{"entitiesByPage":{}},"posts-published":{"entitiesByPage":{}},"posts-scheduled":{"entitiesByPage":{}},"posts-deleted":{"entitiesByPage":{}},"posts-in_moderation":{"entitiesByPage":{}}},"posts":{"625a55ea9d043480b3279430":{"_id":"625a55ea9d043480b3279430","id":"97c53002-a555-4b3c-b4af-102ebea8b982","instanceId":"a401b3f6-76a7-4fea-bc27-bd0a472339b2","status":"published","createdDate":"2022-04-16T05:36:42.702Z","categoryIds":[],"lastPublishedDate":"2023-01-16T18:52:53.685Z","slugs":["how-ai-is-changing-personal-data-tracking"],"seoSlug":"how-ai-is-changing-personal-data-tracking","seoTitle":null,"seoDescription":null,"ownerSiteMemberId":"61bbad8a-8803-4bf7-a9f1-68b99fad499b","lastWriterSiteMemberId":"61bbad8a-8803-4bf7-a9f1-68b99fad499b","isPinned":false,"isCommentsDisabled":false,"presetLikeCount":0,"likeCount":2,"scheduledPublishDate":null,"timeToRead":3,"canonicalUrl":null,"viewCount":11,"totalComments":0,"lastActivityDate":"2023-01-16T18:52:53.685Z","isFeatured":false,"firstPublishedDate":"2022-04-16T05:36:42.653Z","seoShowInSearch":true,"seoShowSnippetInSearch":true,"heroImage":{"src":null,"isCustom":false,"isEnabled":false},"paidPlansGroupIds":[],"paidContentParagraph":1,"tagIds":[],"relatedPostIds":[],"translationId":null,"title":"How AI is changing personal data tracking","language":"en","totalRatings":0,"averageRating":0,"isDemo":false,"excerpt":"Introduction In the past, people used to track their personal data with pen and paper. Nowadays, there are phone apps, Fitbits, and other...","coverImage":{"shouldRender":true,"imageMetadata":{"original_file_name":"de40f50776b54f62b3e0cd4ca4ea679c.jpg","file_name":"de40f50776b54f62b3e0cd4ca4ea679c.jpg","width":2000,"height":1083},"videoMetadata":null,"src":{"original_file_name":"de40f50776b54f62b3e0cd4ca4ea679c.jpg","file_name":"de40f50776b54f62b3e0cd4ca4ea679c.jpg","width":2000,"height":1083},"isEnabled":true,"isCustom":true,"isResolved":true},"slug":"how-ai-is-changing-personal-data-tracking","isLiked":false,"owner":{"name":"Abenezer Abera","image":"https:\u002F\u002Flh3.googleusercontent.com\u002Fa-\u002FAOh14GipUtkdKKdqFLpfcQJsqdhh048i4ghucaCrUw17%3Ds96-c","cover":null,"siteMemberId":"61bbad8a-8803-4bf7-a9f1-68b99fad499b","isOwner":true,"isBlocked":true,"appStore":{"14bcded7-0066-7c35-14d7-466cb3f09103":{"permissions":{"role":"owner"}}},"privacyStatus":"UNKNOWN","title":null,"slug":"abenuabera"},"isSubscribed":false}},"routing":{"locationBeforeTransitions":{"pathname":"\u002Fcustom-feed-widget","search":"","hash":"","action":"POP","key":null,"query":{}}},"searchParams":{"pageId":"c1dmp","compId":"comp-l21fg61b","viewerCompId":"comp-l21fg61b","siteRevision":"33","viewMode":"site","deviceType":"desktop","locale":"en","tz":"Africa\u002FAddis_Ababa","regionalLanguage":"en","width":"980","height":"340","instance":"W7q_J8XX8QTbcv8dHEzU0v7v0_zenLXkiniFOf9GlF4.eyJpbnN0YW5jZUlkIjoiYTQwMWIzZjYtNzZhNy00ZmVhLWJjMjctYmQwYTQ3MjMzOWIyIiwiYXBwRGVmSWQiOiIxNGJjZGVkNy0wMDY2LTdjMzUtMTRkNy00NjZjYjNmMDkxMDMiLCJtZXRhU2l0ZUlkIjoiZWQzY2M3MjgtMjBiMS00YmM0LTlhMTQtMTk0YjdmYTAzODQwIiwic2lnbkRhdGUiOiIyMDIzLTAxLTIxVDEwOjEwOjQ4LjE0MloiLCJkZW1vTW9kZSI6ZmFsc2UsIm9yaWdpbkluc3RhbmNlSWQiOiJiMDA4NDBmYS1kODQ3LTRmNjMtYjRiNS0zNjY0MDBlNThkOTkiLCJhaWQiOiI1MDgwZGE2Mi04MGIwLTQxYjktYmM0Ny1mMzI2NmQ1YzMxMDAiLCJiaVRva2VuIjoiNDkzZDc0ZGUtNTYxNi0wNDJlLTI2MzMtYTQ0MTM4ODMwMWYyIiwic2l0ZU93bmVySWQiOiI2MWJiYWQ4YS04ODAzLTRiZjctYTlmMS02OGI5OWZhZDQ5OWIifQ","currency":"ETB","currentCurrency":"ETB","commonConfig":"{\"brand\":\"wix\",\"bsi\":\"105faf57-f0bb-423e-bfc9-21e516b75e33|1\",\"BSI\":\"105faf57-f0bb-423e-bfc9-21e516b75e33|1\"}","vsi":"a437c625-81d9-4fed-9c91-761f0d194f49"},"users":{},"viewMode":"site","tpaSettings":{"settings":{},"translations":{}}};
+          window.__CONFIG__ = {"bundleName":"custom-feed-widget","fedopsAppName":"communities-blog-custom-feed-widget","imageHost":"static.wixstatic.com","videoHost":"video.wixstatic.com","sectionUrl":"https:\u002F\u002Fabenuabera.wixsite.com\u002Fenat-technology\u002Fblog","instanceId":"a401b3f6-76a7-4fea-bc27-bd0a472339b2","duplexer":{"url":"apps.wix.com\u002Fwix-duplexer-sockets-server","key":"8dd942aa-6255-4bb0-b004-8bd6cf2f6b35"},"isInEditor":false,"isInPreview":false,"categoryPath":"categories","useCategoryMenuLabelForMetadataTitle":false,"editorConfig":{"enableLinkify":true,"mediaToken":"JWS.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Im5FUXljQzlOIn0.eyJpYXQiOjE2NzQyOTkxNTYsImRhdGEiOiJ7XCJ1c2VySWRcIjpcIjYxYmJhZDhhLTg4MDMtNGJmNy1hOWYxLTY4Yjk5ZmFkNDk5YlwiLFwibWV0YXNpdGVJZFwiOlwiZWQzY2M3MjgtMjBiMS00YmM0LTlhMTQtMTk0YjdmYTAzODQwXCJ9IiwiZXhwIjoxNjc1NTA4NzU2fQ.5tOZdZHRXzu-YXoc6dS3b8eN5eHdNaCYVF2XCZSWN9s"},"isDevMode":false,"postPageSectionUrl":"https:\u002F\u002Fabenuabera.wixsite.com\u002Fenat-technology\u002Fpost"};
+          window.__INITIAL_I18N__ = {"localeData":{"account-suspended.account-suspended":"Account Suspended","account-suspended.contact-owner":"For further information get in touch with the site owner.","badge.admin":"Admin","badge.owner":"Admin","badge.editor":"Editor","badge.writer":"Writer","comment-count.label_plural":"{{count, number}} comments","comment-count.label":"{{count, number}} comment","counter.count":"{{count, number}}","date":"{{time, date}}","fullDate":"{{time, fullDate}}","like-button.is-liked":"Post marked as liked","like-button.is-unliked":"Post not marked as liked","like-button.total-likes_plural":"likes.","like-button.total-likes":"like.","no-posts-feed.on-the-way":"Posts Are Coming Soon","no-posts-feed.stay-tuned":"Stay tuned...","time-relative":"{{time, timeRelative}}","timeRelative":"{{time, timeRelative}}","time-to-read.label":"{{minutes}} min read","time-to-read.short-label":"{{minutes}} min","video-embed.disabled-tooltip":"To play this video, view this post from your live site.","video-embed.load-video":"Load video","view-count.label_plural":"{{count, number}} views","view-count.label":"{{count, number}} view","write-comment.write-a-comment":"Write a comment","comment-count.icon-aria-label":"Comment count","like-button.comment-is-liked":"Comment marked as liked","like-button.comment-is-unliked":"Comment not marked as liked","aria-label.authors-picture":"Author's picture"},"lang":"en"};
+          window.__STATICS_VERSION__ = '1.2423.0';
+          window.__LOCALE__ = "en";
+          window.__BASE_PATH__ = 'https://social-blog.wix.com';
+          window.__API_BASE_URL__ = 'https://apps.wix.com/_api/communities-blog-node-api';
+          window.__CLIENT_BASE_PATH__ = '';
+          window.__IS_DEV_MODE__ = false;
+        </script>
+      
+    
+  
+
+</body></html>
